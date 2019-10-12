@@ -20,7 +20,7 @@ function showElements(formular)
 	var explDistance 	= ["Distance"];
 	var explTime		= ["Time"];
 	var explSpeed 		= ["Speed"];
-	var explAcceleration= ["Acceleration"];
+	var explAcceleration	= ["Acceleration"];
 	
 	// Contains all formulars and extracting the string content
 	var formulars 		= document.getElementsByClassName('formular');
@@ -31,13 +31,13 @@ function showElements(formular)
 	// Display areas
 	var disDistance 	= document.getElementById('distance-elements');
 	var disSpeed 		= document.getElementById('speed-elements');
-	var disAcceleration = document.getElementById('acceleration-elements');
-	var list			= 0;
+	var disAcceleration 	= document.getElementById('acceleration-elements');
+	var list		= 0;
 	
 	// Will be used to join the end result
 	var distance 		= 0;
-	var time 			= 0;
-	var speed 			= 0;
+	var time 		= 0;
+	var speed 		= 0;
 	var acceleration 	= 0;
 	
 	
@@ -45,9 +45,9 @@ function showElements(formular)
 		ATTENTION:
 		split is used here
 	*/
-	explDistance.push(forDistance.split(" ")[0]);			// Gets "s(t)" from the distance formular 
-	explTime.push(forSpeed.split(" ")[4]);					// Gets "t" from the speed formular
-	explSpeed.push(forSpeed.split(" ")[0]);					// Gets "v(t)" from the speed fromular
+	explDistance.push(forDistance.split(" ")[0]);		// Gets "s(t)" from the distance formular 
+	explTime.push(forSpeed.split(" ")[4]);			// Gets "t" from the speed formular
+	explSpeed.push(forSpeed.split(" ")[0]);			// Gets "v(t)" from the speed fromular
 	explAcceleration.push(forAcceleration.split(" ")[0]);	// Gets "a" from the acceleration fromular
 	
 
@@ -55,10 +55,10 @@ function showElements(formular)
 		ATTENTION:
 		join is used here
 	*/
-	distance 		= explDistance.join(":");		// "Distance:s(t)"
-	time 			= explTime.join(":");			// "Time:t"
-	speed 			= explSpeed.join(":");			// "Speed:v(t)"
-	acceleration 	= explAcceleration.join(":");	// "Acceleration:a"
+	distance 		= explDistance.join(":");	// "Distance:s(t)"
+	time 			= explTime.join(":");		// "Time:t"
+	speed 			= explSpeed.join(":");		// "Speed:v(t)"
+	acceleration 	= explAcceleration.join(":");		// "Acceleration:a"
 	
 	
 	// Displaying formular elements on web browser in an unordered list 
