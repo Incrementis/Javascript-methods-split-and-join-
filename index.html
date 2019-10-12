@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+	
+		<title>Split and Join</title>
+		<meta charset="UTF-8">
+	
+	</head>
+	
+	<!--
+		NOTE:
+		===============================================================================================
+		
+		Because of simplicity & demonstration purposes, the "style" attribute is used within html tags.
+		Nevertheless it is recommended to use CSS for styling.
+		
+		In '<body>' the 'style="text-align:center;"' 
+		centers similar like the tag '<center>' which was used in some previous mini-projects.
+		
+		===============================================================================================
+	-->
+	
+	<body style="text-align:center;">
+	
+		<!--DISTANCE-->
+		<section>
+		
+			<h2>Distance - uniformly accelerated motion <br> (initial velocity and initial distance is 0)</h2>
+			
+			<p class="formular" style="color:green;">s(t) = 0.5 * a * t²</p>
+			
+			<img src="Distance.png">
+			
+			<fieldset style="width:15%; margin:auto;">
+				<legend>Formular elements</legend>
+				
+				<ul id="distance-elements">
+				</ul>
+				
+			</fieldset>
+			
+			<br>
+			<br>
+			<button type="button" onclick="showElements('distance');">			SHOW</button>
+			<button type="button" onclick="hideElements('distance-elements')">	HIDE</button>
+		
+		</section>
+	
+	
+		<br>
+		<hr width="25%;">	
+	
+	
+		<!--SPEED-->
+		<section>
+		
+			<h2>Speed (derived from distance)</h2>
+			
+			<p class="formular" style="color:blue;">v(t) = a * t</p>
+			
+			<img src="Speed.png">
+			
+			<fieldset style="width:15%; margin:auto;">
+				<legend>Formular elements</legend>
+				
+				<ul id="speed-elements">
+				</ul>
+				
+			</fieldset>
+			
+			<br>
+			<br>
+			<button type="button" onclick="showElements('speed');">			SHOW</button>
+			<button type="button" onclick="hideElements('speed-elements');">	HIDE</button>
+		
+		</section>
+		
+		
+		<br>
+		<hr width="25%;">	
+	
+		
+		<!--ACCELERATION-->
+		<section>
+		
+			<h2>Acceleration (derived from speed)</h2>
+			
+			<p class="formular" style="color:red;">a</p>
+			
+			<img src="Acceleration.png">
+			
+			<fieldset style="width:15%; margin:auto;">
+				<legend>Formular elements</legend>
+				
+				<ul id="acceleration-elements">
+				</ul>
+				
+			</fieldset>
+			
+			<br>
+			<br>
+			<button type="button" onclick="showElements('acceleration');">			SHOW</button>
+			<button type="button" onclick="hideElements('acceleration-elements');">	HIDE</button>
+		
+		</section>
+		
+		
+		<br>
+		<hr width="45%;">	
+	
+	
+		<section>
+			All diagrams use a = 1 as value.
+			<br>
+			<br>
+			For more explanation please visit - 
+			<a href="https://github.com/Incrementis/Javascript-methods-split-and-join-/wiki"> 
+			Split and Join Wiki</a>
+			
+		</section>
+		
+
+	</body>
+
+	
+	
+	<footer>
+	
+		<script language="javascript" type="text/javascript" src="split_join.js"></script>
+	
+	</footer>
+	 
+
+</html>
