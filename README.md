@@ -1,5 +1,5 @@
 # Javascript-methods-split-and-join-
-This project uses split and join to dismantle three simple formular of uiniformly accelerated motion.
+This project uses split and join to dismantle three simple formular of uniformly accelerated motion.
 
 For more information please visit the wiki for this project:
 
